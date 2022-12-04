@@ -1,0 +1,321 @@
+
+
+@import url(http://fonts.googleapis.com/css?family=Adamina);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+body {
+    display: block;
+    margin: 0px 30px;
+    padding: 30px;
+}
+/*---------------------------------------------------------------------------------------------
+header styling
+----------------------------------------------------------------------------------------------*/
+
+/* header {    
+    padding: 32px;
+} */
+main {
+    font-family: 'Lato', sans-serif;
+}
+#logo {
+    display: flex;
+    justify-content: center;
+    margin: auto auto 2rem auto;
+}
+#logo img{
+    display: block;
+    margin: auto;
+    width: clamp(140px,25%,200px);
+}
+.navbar{
+    font-family: 'Adamina', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #777;
+    border-top: 1px solid #777;
+    text-decoration: none;
+}
+.navbar a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1.2em;   
+    color: black;
+}
+
+.navbar a:hover{
+    opacity: 0.7;
+}
+
+#cart-icon {
+    width: 50px
+}
+/*-------------------------------------------------------------------------------------------
+general styling
+---------------------------------------------------------------------------------------------*/
+h1, h2{
+    text-align: center;
+}
+/*-------------------------------------------------------------------------------------------
+contactUs page , register form
+---------------------------------------------------------------------------------------------*/
+/* change font color for all p elements */  
+p {
+    color: #666666;
+    line-height: 180%;
+}
+/*style form container*/
+.main-container {
+    display: grid;
+    margin: 0px 20px 20px 20px;
+}
+.form-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+@media screen and (max-width: 800px) {
+    .form-container {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+.contact-form .location-hours {
+    display: flex;
+}
+/*style a line after the paragraph*/
+.about-us-para-container::after {
+display: block;
+content: "";
+border-bottom: 0.2vw solid #f4b016;
+width: 50%;
+position: absolute;
+left: 25%;
+}
+/* style Contact Us form */
+input[type=text], input[type=password], textarea {
+    width: 90%; 
+	padding: 12px;
+	border: 1px solid #cccccc; 
+	border-radius: 2px; 
+	box-sizing: border-box; 
+	margin-top: 6px; 
+	margin-bottom: 16px;
+}
+.form-text label {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/*--------------------
+Styling buttons
+--------------------*/
+/* .button {
+    display: block;
+    justify-content: right;
+    align-self: right;
+    text-align: right;
+
+} */
+
+.button button[type=submit] {
+    background-color: #749CAC;
+    color: black;
+    padding: 0.8vw 2.5vw;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  /* Adding hover */
+.button button[type=submit]:hover {
+    background-color: #54C4DB;
+  }
+.button button[type=reset] {
+    background-color: #e70000;
+    color: white;
+    padding: 0.8vw 2.5vw;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button button[type=reset]:hover {
+    background-color: #c82525;
+}
+/*-----------------
+Register page
+------------------*/
+.phpError > p{
+    text-align: right;
+}
+/* register container */
+.register-container, .login-container{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+/*-----------------------------------------------------------------------------------------------
+Myaccount page
+-------------------------------------------------------------------------------------------------*/
+/* Invalid login message */
+p em{
+    color:red;
+    display: block;
+    text-align: right;
+    margin-right: 20px;
+}
+
+/* Error message */
+.form-text p, #loginError, #passError {
+    position: relative;
+    text-align: left;
+    font-size: 13px;
+    color: red;
+}
+
+/*-----------------------------------------------------------------------------------------------
+Products page
+-------------------------------------------------------------------------------------------------*/
+/* add to cart style */
+.cart-container{
+    display: flex;
+    width: 70%;
+}
+#root{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.sidebar{
+    width: 40%;
+    border-radius: 5px;
+    margin-left: 20px;
+    padding: 15px;
+    text-align: center;
+}
+.head{
+    background-color: goldenrod;
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #333;
+}
+.figure{
+    display: relative;
+}
+/* .figure img{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    object-position: center;
+} */
+.bottom{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+}
+h2{
+    font-size: 20px;
+    color: red;
+}
+#add-to-cart-btn{
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: goldenrod;
+    padding: 7px 25px;
+    cursor: pointer;
+    color: white;
+}
+#add-to-cart-btn:hover{
+    background-color: #333;
+}
+.cart-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 10px 10px;
+}
+.row-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rowimg{
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+}
+.fa-trash:hover{
+    cursor: pointer;
+}
+/* search bar */
+.search-form {
+    position: relative;
+}
+.search-container form{
+    left: 15%;
+    width: 83%;
+
+}
+.search-form button {
+    position: absolute;
+    right: 20%;
+    top: 0;
+    height: 90%;
+    width: 7%;
+    background: transparent;
+    border: transparent;
+    font-size: 24px;
+    color: #909090;
+    cursor: pointer;
+    outline: 0;
+}
+/* center the products div */
+.results-container{
+    margin-left: 12px;
+}
+
+/* ---------------------------------------------------------------------------------------------------
+PHP CURD APPLICATION: CREATE, UPDATAE, REMOVE, DELETE USER'S INFORMATION
+--------------------------------------------------------------------------------------------------- */
+/*------------------------
+View page
+-------------------------*/
+#view-button {
+    text-decoration: none;
+    color:  #568394;
+    padding: 0.8vw 2.5vw;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  /* Adding hover */
+#view-button:hover {
+    color: #54C4DB;
+  }

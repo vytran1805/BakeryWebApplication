@@ -1,0 +1,208 @@
+@import url(http://fonts.googleapis.com/css?family=Adamina);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+/*---------------------------------------------------------------------------------------------
+header styling
+----------------------------------------------------------------------------------------------*/
+
+header {    
+    padding: 32px;
+}
+main{
+    color: #666666;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+#logo {
+    display: flex;
+    justify-content: center;
+    margin: auto auto 2rem auto;
+}
+#logo img{
+    display: block;
+    margin: auto;
+    width: clamp(140px,25%,200px);
+}
+.navbar{
+    font-family: 'Adamina', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #777;
+    border-top: 1px solid #777;
+    text-decoration: none;
+}
+.navbar a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1.2em;   
+    color: black;
+}
+
+.navbar a:hover{
+    opacity: 0.7;
+}
+
+#cart-icon {
+    width: 50px
+}
+/*-------------------------------------------------------------------------------------------
+cart
+---------------------------------------------------------------------------------------------*/
+h1{
+    text-align: center;
+    color: black;
+}
+/* add to cart style */
+body{
+    margin: 0px 30px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.header{
+    height: 80px;
+    width: 70%;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+/* .header .logo{
+
+    font-weight: bold;
+    color: white;
+} */
+.cart{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    background-color: #54C4DB;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+
+}
+.fa-solid{
+    color: black;
+    justify-items: flex-end;
+}
+/* count number */
+.cart p{
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    color: black;
+}
+.cart-container{
+    display: flex;
+    width: 100%;
+}
+#root{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.sidebar{
+    width: 40%;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+}
+.head{
+    background-color: #54C4DB;
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #333;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 15px;
+}
+.img-box{
+    display: relative;
+}
+.img{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+.bottom{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+h2{
+    font-size: 20px;
+    color: red;
+}
+#add-to-cart-btn{
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: #1c889e;
+    padding: 7px 25px;
+    cursor: pointer;
+    color: white;
+}
+#add-to-cart-btn:hover{
+    background-color: #197a8e;
+}
+.cart-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 10px 10px;
+}
+.row-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #1c889e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rowimg{
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+}
+.fa-trash:hover{
+    cursor: pointer;
+}
