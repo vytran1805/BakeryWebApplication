@@ -112,14 +112,6 @@ input[type=text], input[type=password], textarea {
 /*--------------------
 Styling buttons
 --------------------*/
-/* .button {
-    display: block;
-    justify-content: right;
-    align-self: right;
-    text-align: right;
-
-} */
-
 .button button[type=submit] {
     background-color: #749CAC;
     color: black;
@@ -128,6 +120,8 @@ Styling buttons
     border-radius: 4px;
     cursor: pointer;
   }
+
+
   /* Adding hover */
 .button button[type=submit]:hover {
     background-color: #54C4DB;
@@ -214,12 +208,6 @@ Products page
 .figure{
     display: relative;
 }
-/* .figure img{
-    max-width: 90%;
-    max-height: 90%;
-    object-fit: cover;
-    object-position: center;
-} */
 .bottom{
     margin-top: 20px;
     width: 100%;
@@ -283,7 +271,7 @@ h2{
     width: 83%;
 
 }
-.search-form button {
+.search-form button  {
     position: absolute;
     right: 20%;
     top: 0;
@@ -307,9 +295,9 @@ PHP CURD APPLICATION: CREATE, UPDATAE, REMOVE, DELETE USER'S INFORMATION
 /*------------------------
 View page
 -------------------------*/
-#view-button {
+#view-button, #go-back-button {
     text-decoration: none;
-    color:  #568394;
+    color:  #274e5c;
     padding: 0.8vw 2.5vw;
     border: none;
     border-radius: 4px;
@@ -318,4 +306,16 @@ View page
   /* Adding hover */
 #view-button:hover {
     color: #54C4DB;
+  }
+/*------------------------
+Update page
+-------------------------*/
+  /*go back button*/
+  #go-back-button a{
+    text-decoration:none;
+    color: rgb(0, 0, 0);
+  }
+  #go-back-button:hover{
+    background-color: rgb(176, 176, 176);
+    opacity: 0.8;
   }

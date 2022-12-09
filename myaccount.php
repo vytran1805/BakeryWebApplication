@@ -68,11 +68,8 @@
                 </span>
             </a>
         </div>
-        <div class="login-title-container">
             <h1>Login</h1>
-        </div>
             
-
             <div class="login-container">
                 <form id="loginform" name="form" action="myaccount.php" method="POST" onsubmit="return validate()">
                     <!--This the login for the bakery webpage-->

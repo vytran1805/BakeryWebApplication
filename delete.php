@@ -29,8 +29,8 @@ Brief description of Assignment 2: The purpose of this webpage is to let the use
                 //check connection
                 $conn = require __DIR__ . "/database.php";
 
-                if(isset($_GET['id'])){
-                    $user_id = $_GET['id'];
+                if(isset($_GET['deleteid'])){
+                    $user_id = $_GET['deleteid'];
 
                     $sql = "DELETE FROM `demo`.`customer` WHERE id = '$user_id'";
                     //run the query

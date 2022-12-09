@@ -42,8 +42,9 @@
                 //check if user_id is set in the session
                 if (isset($user)): 
             ?>
-            	<p>Hello <strong><?php echo $user["firstName"] . " " . $user["lastName"] ?></strong>, how are you today?</p>
-            	<a href="logout.php">Log out</a>
+            <p>Hello <strong><?php echo $user["firstName"] . " " . $user["lastName"] ?></strong>, how are you today?</p>
+            <a id ="view-button" href="view.php">View</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a id ="view-button" href="logout.php">Log out</a>
             <?php endif;?>
             <div class="main-container">
                 <!-- About us div -->
@@ -53,8 +54,7 @@
                 <!-- paragraph div -->
                 <div class="about-us-para-container">
                     <p>
-                        The Sidney Bakery has been in the family for over 70 years.  Owned by Mike and Colleen Hay this special spot has made its mark with its famous donuts, sausage rolls breads and pastries. <br>
-                        First established in 1903, the bakery carries an Old World commitment to quality.  A landmark spot on Beacon Ave in the heart of Sidney, with a fondness from both the patrons who have visited for decades and those who are only just discovering it.
+                        Song Bakery has been in the family for 5 years.  Owned by Stu and Vy. This special spot has made its mark with its croissant, cookies and pastries. <br>
                     </p>
                 </div>
                 <!-- Contact us form div -->

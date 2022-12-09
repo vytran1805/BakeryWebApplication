@@ -90,8 +90,9 @@ Brief description of Assignment 2: The purpose of this webpage is to let the use
                         <td><?php echo $user['date'];?></td>
                         <!-- Two lines of code below create 2 buttons to update and delete user  -->
                         <td>
-                            <a id ="view-button" href="update.php?id=<?php echo $user['id']; ?>">Edit</a>&nbsp;
-                            <a id ="view-button" href="delete.php?id=<?php echo $user['id']; ?>">Delete</a>
+                            <!-- updateid and deleteid will be get in update.php and delete.php -->
+                            <a id ="view-button" href="update.php?updateid=<?php echo $user['id']; ?>">Edit</a>&nbsp;
+                            <a id ="view-button" href="delete.php?deleteid=<?php echo $user['id']; ?>">Delete</a>
                         </td>
                     </tr>
                     <?php 

@@ -53,8 +53,9 @@
                 //check if user_id is set in the session
                 if (isset($user)): 
             ?>
-            	<p>Hello <strong><?php echo $user["firstName"] . " " . $user["lastName"] ?></strong>, how are you today?</p>
-            	<a href="logout.php">Log out</a>
+            <p>Hello <strong><?php echo $user["firstName"] . " " . $user["lastName"] ?></strong>, how are you today?</p>
+            <a id ="view-button" href="view.php">View</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a id ="view-button" href="logout.php">Log out</a>
             <?php endif;?>
             <!-- Menu title -->
 			<br>
