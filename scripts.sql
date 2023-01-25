@@ -1,4 +1,3 @@
-
 -- Script to create table
 CREATE DATABASE IF NOT EXISTS demo;
 CREATE TABLE `demo`.`customer` (
