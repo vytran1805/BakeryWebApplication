@@ -1,5 +1,5 @@
 <!--
-Name: Vy Tran & Teresa Vu
+Name: Vy Tran
 Date: December 4, 2022
 Section: CST 8285
 Brief description of Assignment 2: The purpose of this webpage is to let the user create an account for the bakery order.
