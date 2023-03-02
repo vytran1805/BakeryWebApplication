@@ -2,9 +2,9 @@
 By Vy Tran and Teresa Vu
 
 ## Descriptions
-This is the assignment for Web programming course at Algonquin College.
-The project emulates a bakery website that provides users with the ability to register for an account, modify their information and place orders.
-This project used various languages and frameworks, such as HTML5, CSS, JavaScript, PHP, Bootstraps and SQL, and was initially hosted locally on XAMPP.
+This is the assignment for Web programming course at Algonquin College.<br>
+The project emulates a bakery website that provides users with the ability to register for an account, modify their information and place orders.<br>
+It uses various languages and frameworks, such as HTML5, CSS, JavaScript, PHP, Bootstraps and SQL, and was initially hosted locally on XAMPP.
 
 ## Table of Contents
 **1. cart.js - cart.php - cart.css**
